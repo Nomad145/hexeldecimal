@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  php:
+    image: hexeldecimal-fpm:latest
+  web:
+    image: hexeldecimal-nginx:latest
+    ports:
+      - 80:80
